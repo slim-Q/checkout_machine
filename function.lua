@@ -69,6 +69,9 @@ function _M.run(table_order)
 		--满减活动
 		elseif promotion_flag == 2 then
 			local value = sales["down"].value
+			if not table_result["table_down"] then
+				table_result["table_down"] = {}
+			end
 			table_result.table_down[name] = math.modf(numb/value)..unit
 			bill = string.format("%.2f",(numb-math.modf(numb/value))*price)
 			save = math.modf(numb/value)*price

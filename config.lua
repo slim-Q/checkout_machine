@@ -1,7 +1,7 @@
 --商品优惠信息配置
 sales = {
-	down = { goods = {  }, value = 3 }, --down满减活动 goods为参与活动的商品ID，value为3表示满三减一即满二赠一
-	discounts = { goods = { "ITEM000003" }, value = 0.95 } --discounts打折活动，goods为参与活动的商品ID，value为0.95表示九五折
+	down = { goods = { "ITEM000005", "ITEM000001" }, value = 3 }, --down满减活动 goods为参与活动的商品ID，value为3表示满三减一即满二赠一
+	discounts = { goods = { "ITEM000005", "ITEM000003" }, value = 0.95 } --discounts打折活动，goods为参与活动的商品ID，value为0.95表示九五折
 }
 --商品信息
 --key是商品ID，值是商品名称、计价单位、单价、分类
